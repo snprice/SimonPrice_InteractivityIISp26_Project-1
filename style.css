@@ -18,6 +18,13 @@ p{
   color:#3DA542;
 }
 
+.title2 {
+  font-size: 70px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+}
+
 .flexbox {
   display:flex;
   flex-direction:row;
@@ -45,10 +52,16 @@ p{
 }
 
 .speech {
-  font-size: 32px;
+  font-size: 25px;
   padding-left:1vw;
   z-index: 2;
   position:relative;
+  padding:2px;
+  background-image: url("./images/top speech bubble.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: fill;
+  background-position: center;
 }
 
 .selfie {
