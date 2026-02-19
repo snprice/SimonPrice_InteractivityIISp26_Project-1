@@ -25,6 +25,18 @@ p{
     z-index: 2;
 }
 
+.selfiecaption {
+  font-family: "Dokdo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color:white;
+  padding: 1px;
+  margin: 1px;
+  z-index: 3;
+  text-align:center;
+}
+
 .flexbox {
   display:flex;
   flex-direction:row;
@@ -67,6 +79,28 @@ p{
 .selfie {
   padding-left:2vw;
   z-index: -1;
+  display: block;
+}
+
+.selfiecontainer {
+  position: relative;
+  width: 10%;
+}
+
+.overlay {
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top:0;
+  transition: .5s ease;
+  background-color:black;
+  position:absolute;
+  justify-content:center;
+  align-items:center;
+}
+
+.selfiecontainer:hover .overlay {
+  opacity: 1;
 }
 
 .flag-container {
